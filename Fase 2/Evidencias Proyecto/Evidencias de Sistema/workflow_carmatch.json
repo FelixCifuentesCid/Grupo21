@@ -1,0 +1,54 @@
+{
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "5ec011b0-f4d2-4d7f-9e42-c67f06eb3cdf",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://example.com/repuestos",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "5fe87ab8-6d44-4cc4-9dab-005537ef2687",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f8b9569d-7f46-4bcd-a826-b0721b77bf6b",
+  "meta": {
+    "instanceId": "f970db54b0ecd0a37d5f57b022684a26c34a217217f42541d91b80eba796c5e4"
+  },
+  "id": "vu6U5pU81lrLMn8p",
+  "tags": []
+}
